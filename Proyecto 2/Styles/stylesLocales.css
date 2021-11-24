@@ -86,9 +86,13 @@ footer {
     display: flex;
     background-color: rgb(54, 54, 54);
     justify-content: right;
-}
+    padding: 1px;
+    }
+    
 .fab, .far {
     font-size: 30px;
     color: white;
+    padding: 4px;
+    margin: 1px;
 }
 /* ------- FOOTER -------*/
