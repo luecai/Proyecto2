@@ -12,7 +12,7 @@ body {
 a {
     text-decoration: none;
     color: white;
-}
+} 
 
 /*------- Estilos HEADER ------------ */
 h1 {
@@ -22,7 +22,7 @@ h1 {
 nav {
     width: 100%;
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     align-items:center;
     justify-content: space-around;
     background-color: rgb(54, 54, 54);
@@ -47,21 +47,112 @@ li {
 li:hover {
     
     transform: translate(-2px , -2px);
-}
+} 
 
 
 /*------- Estilos HEADER ------------ */
 
-main {
-    /* border: 1px solid red; */
-    background-image: url(./img/Volvo1.jpg);
-    background-position: center;
-    background-size: cover;
+/*------- Estilos MAIN ------------ */
+
+.grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 800px;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
     
 }
-img {
-    width: 100%;
+.grid div{
+    
+    padding: 1em;
 }
+.box-img1{
+    height: 700px;
+    width: 450px;
+    text-align: center;
+    font-size: 80px;
+    color:white;
+    border: 32px solid black;
+    background-image: url(../Pañol/sedan.jpg);
+    margin:10px ;
+    border-radius:5px;
+    border: 1px solid #999;
+    padding:13px;
+    object-fit: cover;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    transition: transform 1s;
+}
+.box-img1:hover{
+    opacity: 95%;
+    transform: rotateZ(360deg);
+    transform: rotatey(360deg);
+    
+    
+    
+}
+.box-img2{
+    height: 700px;
+    width: 450px;
+    text-align: center;
+    font-size: 80px;
+    color:white;
+    border: 32px solid black;
+    background-image: url(../Pañol/rural.jpg);
+    margin:10px ;
+    border-radius:5px;
+    border: 1px solid #999;
+    padding:13px;
+    object-fit: cover;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    transition: transform 1s;
+}
+.box-img2:hover{
+    opacity: 95%;
+    transform: rotateZ(360deg);
+    transform: rotatey(360deg);
+    
+    
+    
+}
+
+.box-img3{
+    height: 700px;
+    width: 450px;
+    text-align: center;
+    font-size: 80px;
+    color:white;
+    border: 32px solid black;
+    background-image: url(../Pañol/suv.jfif);
+    margin:10px ;
+    border-radius:5px;
+    border: 1px solid #999;
+    padding:13px;
+    object-fit: cover;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    transition: transform 1s;
+}
+.box-img3:hover{
+    opacity: 95%;
+    transform: rotateZ(360deg);
+    transform: rotatey(360deg);
+    
+    
+    
+}
+
+.grid div:hover{
+    border: 1px solid red;
+}
+
+
+/*------- Estilos MAIN ------------ */
 
 /* ------- FOOTER -------*/
 
@@ -78,5 +169,6 @@ footer {
     color: white;
     padding: 4px;
     margin: 1px;
-}
+} 
 /* ------- FOOTER -------*/
+
