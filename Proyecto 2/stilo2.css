@@ -1,0 +1,39 @@
+.cuadro-1{
+    background-color: tomato; 
+    width: 400px; 
+    height: 400px;
+}
+.cuadro-2{
+    background-color: blueviolet; 
+    width: 300px; 
+    height: 300px;
+}
+.cuadro-3{
+    background-color: rgb(20, 204, 45); 
+    width: 200px; 
+    height: 200px;
+}
+@media (max-width: 320px){
+    .cuadro-1{
+        background-color: black;
+        width: 100%;
+    }
+}
+@media (min-width: 321px) and (max-width: 768px){
+    .cuadro-2{
+    display: none;
+    }
+    
+}
+@media (min-width: 769px), handheld {
+    .cuadro-2{
+        background-color: brown;
+        width: 100%;
+    }
+}
+@media tv and (min-width: 998px) and (orientation: landscape){
+    .cuadro-3{
+        width: 100%;
+        background-color: cyan;
+    }
+}
