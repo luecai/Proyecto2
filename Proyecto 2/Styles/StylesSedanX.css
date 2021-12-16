@@ -6,7 +6,7 @@
 }
 
 body {
-    
+    margin-top: 100px;
     background: rgb(215,215,215);
     background: linear-gradient(90deg, rgba(215,215,215,1) 0%, rgba(65,65,65,1) 50%, rgba(215,215,215,0.7035189075630253) 100%);
 
