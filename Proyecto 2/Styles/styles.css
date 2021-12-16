@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #c4c4c4;
+    background-color: #3B3B43;
 }
 
 a {
@@ -14,15 +14,16 @@ a {
     color: white;
 } 
 
+
+
 /*------- Estilos HEADER ------------ */
-h1 {
+/* h1 {
     text-align: center;
 }
 
 nav {
     width: 100%;
     display: flex;
-    /* position: fixed; */
     align-items:center;
     justify-content: space-around;
     background-color: rgb(54, 54, 54);
@@ -30,7 +31,6 @@ nav {
 
 ul {
     display: flex;
-    /* border: 1px solid red; */
 }
 
 li {
@@ -48,8 +48,10 @@ li:hover {
     
     transform: translate(-2px , -2px);
 } 
-
-
+ */
+nav{
+    background-color: #28272D;
+}
 /*------- Estilos HEADER ------------ */
 
 /*------- Estilos MAIN ------------ */
@@ -61,6 +63,7 @@ li:hover {
     align-items: center;
     justify-items: center;
     justify-content: center;
+    background-color: #3B3B43;
     
 }
 /* .grid div{
@@ -294,6 +297,21 @@ li:hover {
     object-fit: cover;
 }
 
+h3{
+    color: #AAA8AE;
+}
+
+p{
+    color: #AAA8AE;
+}
+
+li{
+    color: #AAA8AE;
+}
+
+
+
+
 
 /*------- Estilos MAIN ------------ */
 
@@ -302,7 +320,7 @@ li:hover {
 footer {
     width: 100%;
     display: flex;
-    background-color: rgb(54, 54, 54);
+    background-color: #28272D;
     justify-content: right;
     padding: 1px;
     }

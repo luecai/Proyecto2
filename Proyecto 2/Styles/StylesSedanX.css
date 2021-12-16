@@ -5,11 +5,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+.body {
     margin-top: 100px;
-    background: rgb(215,215,215);
-    background: linear-gradient(90deg, rgba(215,215,215,1) 0%, rgba(65,65,65,1) 50%, rgba(215,215,215,0.7035189075630253) 100%);
-
+    background-color: #3B3B43;
 }
 
 
@@ -18,20 +16,23 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #3B3B43;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #676565;
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 3px solid #3B3B43;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #3B3B43;
 } 
 
+nav{
+    background-color: #28272D;
+}
 /*------- Estilos HEADER ------------ */
 
 
@@ -71,6 +72,9 @@ li:hover {
 /*------- Estilos HEADER ------------ */
 
 /*------- Estilos MAIN ------------ */
+.exodia{
+    background-color: #3B3B43;
+}
 .grid{
     display: grid;
     grid-template-columns: 25% 50% 380px;
@@ -78,6 +82,7 @@ li:hover {
     gap: 1em;
     border-radius: 20px;
     font-size: 25px;
+    
     
 }
 
@@ -103,6 +108,7 @@ li:hover {
     justify-items: center;
     align-items: center;
     align-content: space-evenly;
+    color: #AAA8AE;
 }
 
 
@@ -115,7 +121,7 @@ li:hover {
     text-align: center;
     justify-content: center;
     object-fit: cover;
-    
+    color: #AAA8AE;
     cursor: pointer;
     transition: all 300ms;
 }
@@ -127,7 +133,7 @@ li:hover {
 } 
 
 .el12{
-
+    color: #AAA8AE;
     display: flex;
     align-items: center;
     text-align: center;
@@ -136,7 +142,7 @@ li:hover {
 
 .el13{
 
-
+    color: #AAA8AE;
     display: flex;
     align-items: center;
     text-align: center;
@@ -150,6 +156,9 @@ li:hover {
     transform: translate( 10px , -10px);
 } 
 
+.texto{
+    color: #AAA8AE;
+}
 
 
 .contenedorbody{
@@ -202,6 +211,17 @@ button {
     display: none;
     color: black;
 }
+
+nav{
+    background-color: #28272D;
+    color: #AAA8AE;
+}
+
+/* a{
+    color: #AAA8AE;
+} */
+
+
 /*------- Estilos MAIN ------------ */
 
 /* ------- FOOTER -------*/
@@ -209,7 +229,7 @@ button {
 footer {
     width: 100%;
     display: flex;
-    background-color: rgb(54, 54, 54);
+    background-color: #28272D;
     justify-content: right;
     padding: 1px;
     }
