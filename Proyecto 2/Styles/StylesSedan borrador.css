@@ -5,9 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.body {
-    margin-top: 100px;
-    background-color: #3B3B43;
+body {
+    
+    background: rgb(215,215,215);
+    background: linear-gradient(90deg, rgba(215,215,215,1) 0%, rgba(65,65,65,1) 50%, rgba(215,215,215,0.7035189075630253) 100%);
+
 }
 
 
@@ -16,33 +18,31 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #3B3B43;
+    background: #ffffff;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #676565;
     border-radius: 10px;
-    border: 3px solid #3B3B43;
+    border: 3px solid #ffffff;
 }
 
 a {
     text-decoration: none;
-    color: #3B3B43;
+    color: white;
 } 
 
-nav{
-    background-color: #28272D;
-}
 /*------- Estilos HEADER ------------ */
 
 
-/* h1 {
+h1 {
     text-align: center;
 }
 
 nav {
     width: 100%;
     display: flex;
+    /* position: fixed; */
     align-items:center;
     justify-content: space-around;
     background-color: rgb(54, 54, 54);
@@ -50,6 +50,7 @@ nav {
 
 ul {
     display: flex;
+    /* border: 1px solid red; */
 }
 
 li {
@@ -66,15 +67,13 @@ li {
 li:hover {
     
     transform: translate(-2px , -2px);
-}  */
+} 
 
 
 /*------- Estilos HEADER ------------ */
 
 /*------- Estilos MAIN ------------ */
-.exodia{
-    background-color: #3B3B43;
-}
+
 .grid{
     display: grid;
     grid-template-columns: 25% 50% 380px;
@@ -82,8 +81,6 @@ li:hover {
     gap: 1em;
     border-radius: 20px;
     font-size: 25px;
-    
-    
     
 }
 
@@ -93,7 +90,6 @@ li:hover {
     margin: 5px;
     /* border: 1px solid red; */
     border-radius: 20px;
-    color: #AAA8AE;
 }
 
 /* .grid div:hover{
@@ -105,11 +101,11 @@ li:hover {
     grid-template-columns: auto 33% auto;
     /* grid-template-rows: 100px; */
     grid-column: 1/4;
+    color: white;
     justify-content: space-around;
     justify-items: center;
     align-items: center;
     align-content: space-evenly;
-    color: #AAA8AE;
 }
 
 
@@ -122,7 +118,7 @@ li:hover {
     text-align: center;
     justify-content: center;
     object-fit: cover;
-    color: #AAA8AE;
+    
     cursor: pointer;
     transition: all 300ms;
 }
@@ -134,7 +130,7 @@ li:hover {
 } 
 
 .el12{
-    color: #AAA8AE;
+
     display: flex;
     align-items: center;
     text-align: center;
@@ -143,7 +139,7 @@ li:hover {
 
 .el13{
 
-    color: #AAA8AE;
+
     display: flex;
     align-items: center;
     text-align: center;
@@ -157,70 +153,122 @@ li:hover {
     transform: translate( 10px , -10px);
 } 
 
-.texto{
-    color: #AAA8AE;
+
+
+.el2{
+    grid-column: 1/2;
+    grid-row: 2/8;
+    display: table-cell;
+    text-align: center;
+    /* border: solid 3px red; */
+    vertical-align: center;
+    Align-self: center;
 }
 
+img{
+    padding: 15px;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 300ms;
+}
 
-.contenedorbody{
+img:hover {
+    
+    transform: scale(1.1);
+} 
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 100%;
+    /* border: solid 3px red; */
+
+    flex-flow: row wrap;
+    
+}
+
+.contenedor div {
+    /* border: solid 3px red; */
     display: flex;
     width: 100%;
-    height: 800px;
-    /* border: 3px solid red; */
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: space-evenly;
+    object-fit: cover;
     align-items: center;
-    margin: 0px;
-    padding: 0px;
+
 }
 
-.texto{
+/* .el3{
+    border: solid 3px red;
     display: flex;
-    width: 300px;
-    height: 800px;
-        /* border: 3px solid red; */
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-    padding: 0px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.imagenes{
+.el4{
+    border: solid 3px red;
     display: flex;
-    width: 800px;
-    height: 800px;
-    /* border: 3px solid red; */
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.imagenes2{
+.el5{
+    border: solid 3px red;
     display: flex;
-    /* border: 3px solid red; */
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    object-fit: cover;
 }
 
-button {
-    display: none;
-    color: black;
-}
-
-nav{
-    background-color: #28272D;
-    color: #AAA8AE;
-}
-
-/* a{
-    color: #AAA8AE;
+.el6{
+    border: solid 3px red;
+    display: flex;
+    width: 100%;
+    object-fit: cover;
 } */
+/* 
+.el3{
+    grid-row: 2/21;
+}
+
+.sedan1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.el4{
+    grid-row: 2/21;
+}
+
+.sedan2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.el5{
+    grid-row: 21/40;
+}
+
+.sedan3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.el6{
+    grid-row: 21/40;
+}
+
+.sedan4{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+
 
 
 /*------- Estilos MAIN ------------ */
@@ -230,7 +278,7 @@ nav{
 footer {
     width: 100%;
     display: flex;
-    background-color: #28272D;
+    background-color: rgb(54, 54, 54);
     justify-content: right;
     padding: 1px;
     }
