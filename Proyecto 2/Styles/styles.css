@@ -339,7 +339,7 @@ footer {
 } 
 /* ------- FOOTER -------*/
 
-@media (max-width: 1321px) {
+@media (max-width: 970px) {
     .grid{
         flex-direction: column;
     }
