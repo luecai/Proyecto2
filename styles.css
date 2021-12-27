@@ -8,7 +8,7 @@
 
 body {
   background-color: #3B3B43;
-  height: 100%;
+  height: auto;
 }
 
 a {
@@ -16,6 +16,43 @@ a {
   color: white;
 }
 
+/*------- Estilos HEADER ------------ */
+/* h1 {
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background-color: rgb(54, 54, 54);
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    width: auto;
+    height: 20px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+li:hover {
+    
+    transform: translate(-2px , -2px);
+} 
+ */
+/* nav{
+    background-color: #28272D;
+} */
+/*------- Estilos HEADER ------------ */
 /*------- Estilos MAIN ------------ */
 .grid {
   display: -webkit-box;
@@ -31,31 +68,19 @@ a {
   justify-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: white;
+  background-color: #3B3B43;
+  /* border: solid red 3px; */
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: auto;
-}
-
-.grid h3 {
-  color: #AAA8AE;
-}
-
-.grid p {
-  color: #AAA8AE;
-}
-
-.grid li {
-  color: #AAA8AE;
 }
 
 .box-img1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 840px;
+  height: 900px;
   width: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -158,14 +183,6 @@ a {
   border-radius: 50px;
 }
 
-.box-img2__BannerRural {
-  height: 700px;
-  width: 450px;
-  border-radius: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .box-img2 figure {
   position: relative;
   cursor: pointer;
@@ -235,6 +252,14 @@ a {
   margin: auto;
 }
 
+.BannerRural {
+  height: 700px;
+  width: 450px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .box-img3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,14 +273,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50px;
-}
-
-.box-img3__BannerSural {
-  height: 700px;
-  width: 450px;
-  border-radius: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .box-img3 figure {
@@ -327,6 +344,26 @@ a {
   margin: auto;
 }
 
+.BannerSuv {
+  height: 700px;
+  width: 450px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h3 {
+  color: #AAA8AE;
+}
+
+p {
+  color: #AAA8AE;
+}
+
+li {
+  color: #AAA8AE;
+}
+
 /*------- Estilos MAIN ------------ */
 /* ------- FOOTER -------*/
 footer {
@@ -334,16 +371,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
+  background-color: yellow;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
   padding: 1px;
 }
 
-footer .fab, footer .far {
+.fab, .far {
   font-size: 30px;
-  color: black;
+  color: white;
   padding: 4px;
   margin: 1px;
 }
