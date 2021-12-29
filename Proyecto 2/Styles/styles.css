@@ -9,6 +9,8 @@
 body {
   background-color: #3B3B43;
   height: 100%;
+  /* border: red solid 1px; */
+  padding-top: 45px;
 }
 
 a {
@@ -329,23 +331,37 @@ a {
 
 /*------- Estilos MAIN ------------ */
 /* ------- FOOTER -------*/
-footer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  padding: 1px;
-}
 
 footer .fab, footer .far {
   font-size: 30px;
   color: black;
   padding: 4px;
   margin: 1px;
+}
+
+.footers{
+  display: flex;
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0px;
+}
+.footer__text{
+  display: flex;
+  /* border: 1px solid red; */
+  height: 50px;
+  align-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.footer__iconos{
+  display: flex;
+  /* border: 1px solid red; */
 }
 
 /* ------- FOOTER -------*/

@@ -1,43 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-}
-
+}  
 body {
-    background-color: #c4c4c4;
-}
-
+    background-color: #3B3B43;
+    height: 100%;
+    /* border: red solid 1px; */
+    padding-top: 45px;
+}  
 a {
     text-decoration: none;
     color: white;
-}
-/*------- Estilos HEADER ------------ */
-h1 {
-    text-align: center;
-}
+}  
 
-nav {
-    width: 100%;
-    display: flex;
-    position: fixed;
-    justify-content: space-around;
-    background-color: rgb(54, 54, 54);
-}
-
-ul {
-    display: flex;
-    /* border: 1px solid red; */
-}
-
-li {
-    list-style: none;
-    padding: 10px;
-}
-
-
-/*------- Estilos HEADER ------------ */
 
 
 
@@ -49,19 +27,22 @@ li {
 .mapas{
     padding: 100px;
     display: flex;
-    border: solid 3px red;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    /* border: solid 3px red; */
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
-    
+    align-content: center;
+    justify-content: center;
 }
+    
+
 
 .mapas__card{
     display: flex;
+    background-color: rgb(247, 241, 241);
     /* border: solid 1px white; */
-    background-color: rgba(189, 189, 189, 0.096);
-    border-radius: 50px;
+    border-radius: 10px;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
@@ -74,7 +55,10 @@ h3, h4 {
     display: inline;
     width: 100%;
     text-align: center;
-    margin: 10px;
+    /* margin: 10px; */
+}
+li{
+    list-style-type: none;
 }
 
 
@@ -84,18 +68,36 @@ h3, h4 {
 
 /* ------- FOOTER -------*/
 
-footer {
-    width: 100%;
-    display: flex;
-    background-color: rgb(54, 54, 54);
-    justify-content: right;
-    padding: 1px;
-    }
-    
-.fab, .far {
+footer .fab, footer .far {
     font-size: 30px;
-    color: white;
+    color: black;
     padding: 4px;
     margin: 1px;
-}
-/* ------- FOOTER -------*/
+  }
+  
+  .footers{
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+  .footer__text{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 50px;
+    align-content: center;
+    align-items: center;
+    padding-top: 15px;
+  }
+  
+  .footer__iconos{
+    display: flex;
+    /* border: 1px solid red; */
+  }
+  
+  /* ------- FOOTER -------*/

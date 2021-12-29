@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #c4c4c4;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*------- Estilos HEADER ------------ */
+h1 {
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    background-color: rgb(54, 54, 54);
+}
+
+ul {
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+
+/*------- Estilos HEADER ------------ */
+
+
+/*------- Estilos MAIN ------------ */
+
+img{
+    width: 100%;
+}
+form{
+    display: flex;
+    justify-content: flex-start;
+}
+
+h3{
+    display: inline;
+    margin: 10px;
+}
+
+.cant{
+    border-radius: 10px;
+}
+
+.input{
+    border-radius: 10px;
+}
+
+.contenedor{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border: solid 3px red;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+img{
+    width: 800px;
+    height: 800px;
+}
+
+.select{
+    border: solid 3px red;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.select div{
+    display: flex;
+    border: solid 3px red;
+    gap: 50px;
+}
+
+/*------- Estilos MAIN ------------ */
+
+
+/* ------- FOOTER -------*/
+
+footer {
+    width: 100%;
+    display: flex;
+    background-color: rgb(54, 54, 54);
+    justify-content: right;
+    padding: 1px;
+    }
+    
+.fab, .far {
+    font-size: 30px;
+    color: white;
+    padding: 4px;
+    margin: 1px;
+}
+/* ------- FOOTER -------*/

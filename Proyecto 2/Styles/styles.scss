@@ -287,6 +287,11 @@ footer {
         color: black;
         padding: 4px;
         margin: 1px;
+        .text_footer{
+            border: 1px solid red;
+            display: flex;
+            text-align: left;
+        }
     } 
     }
 

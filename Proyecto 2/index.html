@@ -16,38 +16,42 @@
     <link rel="shortcut icon" href="./Pañol/LogoVolvo.jpg">
 </head>
 <body class="body">
-    <header>
-        <div class="exodia">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+            <!-- Container wrapper -->
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html" >Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/Service.html">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/Locales.html">Locales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/Repuestos.html">Repuestos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/Catalogo.html">Catalogo</a>
-                        </li>
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="./index.html">VOLVO</a>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./Paginas/Locales.html">Locales</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Modelos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="./Paginas/Sedan.html">Sedan</a></li>
+                    <li><a class="dropdown-item" href="./Paginas/Rural.html">Rural</a></li>
+                    <li><a class="dropdown-item" href="./Paginas/Suv.html">Suv</a></li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
-                    </form>
-                </div>
+                </li>
+                </ul>
             </div>
+            </div>
+            <!-- Container wrapper -->
         </nav>
-    </header>
+        <!-- Navbar -->
+</header>
     
     <main>
         <div class="grid">
@@ -86,13 +90,18 @@
             </div>
         </div>
     </main>
-    <div class="footer">
+   
     <footer>
+        <div class="footers">
+        <p class="footer__text">Copyright© 2021 Volvo Car Corporation (o sus filiales o empresas licenciadoras) - Centro Atención al Cliente 91 566 62 37</p>
+        <div class="footer__iconos">
         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="./Paginas/Contacto.html"><i class="far fa-envelope"></i></a>
-    </footer> 
+        </div>
     </div>
+    </footer> 
+    
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
