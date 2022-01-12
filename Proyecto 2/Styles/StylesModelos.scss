@@ -3,7 +3,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+            font-family: 'Staatliches', cursive;
 }  
 body {
     background-color: #3B3B43;
@@ -15,6 +15,23 @@ a {
     text-decoration: none;
     color: white;
 }  
+.navb{
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+}
+
+// INICIO DE MAPAS
+
+$FontSize: ("sm": 20px, "md": 35px, "lg": 50px);
+
+// INICIO DE MIXIN
+
+@mixin card {
+    width: 400px;
+    height: 300PX;
+    border: rgba(110, 108, 108, 0.562) solid 0.5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+}
 
 
 /*------- INICIO CROSS BAR ------------ */
@@ -48,11 +65,21 @@ body::-webkit-scrollbar-thumb {
     align-content: center;
     justify-content: center;
     align-items: center;
+        &__h1{
+            font-size: map-get($FontSize, lg);
+            font-weight:bold;
+            line-height:50px;
+            text-align:center;
+            color: black;
+            /* background-color:#4d4d4d; */
+            padding:20px;
+            /* border: solid blue 3px; */
+        }
         &__spec{
             /* border: solid slateblue 3px; */
             height: auto;
             &__h2{
-                font-size:xx-large;
+                font-size: map-get($FontSize, md);
                 font-weight:bold;
                 line-height:50px;
                 text-align:center;
@@ -63,7 +90,7 @@ body::-webkit-scrollbar-thumb {
             }
             &__h3{
                 font-family:Arial, sans-serif;
-                font-size:large;
+                font-size:map-get($FontSize, sm);
                 line-height:50px;
                 text-align:center;
                 padding:20px;
@@ -97,10 +124,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     &__card{
         /* border: solid red 5px; */
-        width: 400px;
-        height: 300PX;
-        border: rgba(110, 108, 108, 0.562) solid 0.5px;
-        border-radius: 10px;
+        @include card();
         &__h3{
             font-family:Arial, sans-serif;
             font-size:large;
@@ -119,6 +143,7 @@ body::-webkit-scrollbar-thumb {
             color:#000000;
             background-color:#ffffff;
             padding:20px;
+            
         }
     }
 }
@@ -162,7 +187,9 @@ footer .fab, footer .far {
     /* border: 1px solid red; */
 }
 
-/* ------- FOOTER -------*/
+/* ------- FIN FOOTER -------*/
+
+/* ------- MEDIA QUERY -------*/
 
 @media (min-width: 320px) and (max-width: 882px){
     .contenedorbody__imagen{

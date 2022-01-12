@@ -1,103 +1,128 @@
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}  
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Staatliches', cursive;
+}
+
 body {
-    background-color: #3B3B43;
-    height: 100%;
-    /* border: red solid 1px; */
-    padding-top: 45px;
-}  
+  background-color: #3B3B43;
+  height: 100%;
+  /* border: red solid 1px; */
+  padding-top: 45px;
+}
+
 a {
-    text-decoration: none;
-    color: white;
-}  
-
-
-
-
+  text-decoration: none;
+  color: white;
+}
 
 /*------- Estilos MAIN ------------ */
-
-
-
-.mapas{
-    padding: 100px;
-    display: flex;
-    /* border: solid 3px red; */
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 50px;
-    align-content: center;
-    justify-content: center;
-}
-    
-
-
-.mapas__card{
-    display: flex;
-    background-color: rgb(247, 241, 241);
-    /* border: solid 1px white; */
-    border-radius: 10px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-/* .mapas__card__map{
-    align-items: center;
-} */
-h3, h4 {
-    
-    display: inline;
-    width: 100%;
-    text-align: center;
-    /* margin: 10px; */
-}
-li{
-    list-style-type: none;
+.mapas {
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* border: solid 3px red; */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+.mapas__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* border: solid 1px white; */
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.3);
+}
 
+.mapas__card h3, .mapas__card h4 {
+  display: inline;
+  width: 100%;
+  text-align: center;
+  /* margin: 10px; */
+}
 
+.mapas__card li {
+  list-style-type: none;
+}
 
 /*------- Estilos MAIN ------------ */
-
 /* ------- FOOTER -------*/
-
 footer .fab, footer .far {
-    font-size: 30px;
-    color: black;
-    padding: 4px;
-    margin: 1px;
-  }
-  
-  .footers{
-    display: flex;
-    /* border: 1px solid blue; */
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 0px;
-  }
-  .footer__text{
-    display: flex;
-    /* border: 1px solid red; */
-    height: 50px;
-    align-content: center;
-    align-items: center;
-    padding-top: 15px;
-  }
-  
-  .footer__iconos{
-    display: flex;
-    /* border: 1px solid red; */
-  }
-  
-  /* ------- FOOTER -------*/
+  font-size: 30px;
+  color: black;
+  padding: 4px;
+  margin: 1px;
+}
+
+.footers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0px;
+}
+
+.footers__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* border: 1px solid red; */
+  height: 50px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+}
+
+.footers__iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+/* ------- FIN FOOTER -------*/
+/*# sourceMappingURL=stylesLocales.css.map */

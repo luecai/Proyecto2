@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Staatliches', cursive;
 }
 
 body {
@@ -16,6 +16,11 @@ body {
 a {
   text-decoration: none;
   color: white;
+}
+
+.navb {
+  -webkit-box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
 /*------- INICIO CROSS BAR ------------ */
@@ -59,13 +64,24 @@ body::-webkit-scrollbar-thumb {
           align-items: center;
 }
 
+.contenedorbody__texto__h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  color: black;
+  /* background-color:#4d4d4d; */
+  padding: 20px;
+  /* border: solid blue 3px; */
+}
+
 .contenedorbody__texto__spec {
   /* border: solid slateblue 3px; */
   height: auto;
 }
 
 .contenedorbody__texto__spec__h2 {
-  font-size: xx-large;
+  font-size: 35px;
   font-weight: bold;
   line-height: 50px;
   text-align: center;
@@ -77,7 +93,7 @@ body::-webkit-scrollbar-thumb {
 
 .contenedorbody__texto__spec__h3 {
   font-family: Arial, sans-serif;
-  font-size: large;
+  font-size: 20px;
   line-height: 50px;
   text-align: center;
   padding: 20px;
@@ -136,6 +152,8 @@ body::-webkit-scrollbar-thumb {
   height: 300PX;
   border: rgba(110, 108, 108, 0.562) solid 0.5px;
   border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
 .contenedor__info__card__h3 {
@@ -212,7 +230,8 @@ footer .fab, footer .far {
   /* border: 1px solid red; */
 }
 
-/* ------- FOOTER -------*/
+/* ------- FIN FOOTER -------*/
+/* ------- MEDIA QUERY -------*/
 @media (min-width: 320px) and (max-width: 882px) {
   .contenedorbody__imagen {
     display: -webkit-box;
