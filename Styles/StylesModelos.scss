@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Staatliches', cursive;
+}  
+body {
+    background-color: #3B3B43;
+    height: 100%;
+    /* border: red solid 1px; */
+    padding-top: 45px;
+}  
+a {
+    text-decoration: none;
+    color: white;
+}  
+.navb{
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+}
+
+// INICIO DE MAPAS
+
+$FontSize: ("sm": 20px, "md": 35px, "lg": 50px);
+
+// INICIO DE MIXIN
+
+@mixin card {
+    width: 400px;
+    height: 300PX;
+    border: rgba(110, 108, 108, 0.562) solid 0.5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.3);
+}
+
+
+/*------- INICIO CROSS BAR ------------ */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #676565;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+/*------- FIN CROSS BAR ------------ */
+
+
+/*------- Estilos MAIN ------------ */
+
+.contenedorbody{
+    margin-top: 50px;
+    &__texto{
+            /* border: red solid 1px; */
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+        &__h1{
+            font-size: map-get($FontSize, lg);
+            font-weight:bold;
+            line-height:50px;
+            text-align:center;
+            color: black;
+            /* background-color:#4d4d4d; */
+            padding:20px;
+            /* border: solid blue 3px; */
+        }
+        &__spec{
+            /* border: solid slateblue 3px; */
+            height: auto;
+            &__h2{
+                font-size: map-get($FontSize, md);
+                font-weight:bold;
+                line-height:50px;
+                text-align:center;
+                color: black;
+                /* background-color:#4d4d4d; */
+                padding:20px;
+                /* border: solid blue 3px; */
+            }
+            &__h3{
+                font-family:Arial, sans-serif;
+                font-size:map-get($FontSize, sm);
+                line-height:50px;
+                text-align:center;
+                padding:20px;
+                /* border: solid blue 3px; */
+            }
+        }
+    }
+    &__imagen{
+        display: flex;
+        padding-top: 50px;
+        width: 100%;
+        /* border: rgb(26, 226, 226) solid 3px; */
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+            &__carrosuel{
+                display: flex;
+                /* border: red solid 1px; */
+                width: 800px;
+            }
+    }
+}
+
+.contenedor__info{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    &__card{
+        /* border: solid red 5px; */
+        @include card();
+        &__h3{
+            font-family:Arial, sans-serif;
+            font-size:large;
+            font-weight:bold;
+            line-height:50px;
+            text-align:left;
+            color:#000000;
+            background-color:#ffffff;
+            padding:20px;
+        }
+        &__h4{
+            font-family:Arial, sans-serif;
+            font-size:medium;
+            line-height:25px;
+            text-align:left;
+            color:#000000;
+            background-color:#ffffff;
+            padding:20px;
+            
+        }
+    }
+}
+
+/*------- Estilos MAIN ------------ */
+
+
+/* ------- FOOTER -------*/
+
+footer .fab, footer .far {
+    font-size: 30px;
+    color: black;
+    padding: 4px;
+    margin: 1px;
+}
+
+.footers{
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+    margin-top: 50px;
+}
+
+.footer__text{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 50px;
+    align-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.footer__iconos{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+/* ------- FIN FOOTER -------*/
+
+/* ------- MEDIA QUERY -------*/
+
+@media (min-width: 320px) and (max-width: 882px){
+    .contenedorbody__imagen{
+        display: flex;
+    }
+    .contenedor__info{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        box-orient: vertical;
+        text-align: center;
+    }
+    .contenedor__info__card{
+        display: flex;
+        width: 90%;
+        height: auto;
+    }
+    .footers{
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        box-orient: vertical;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contenedor__info{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1239px) and (max-width: 1671px) {
+    .contenedor__info{
+        display: flex;
+        width: 100%;
+    }
+}
